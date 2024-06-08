@@ -94,7 +94,7 @@ function Simulacro() {
                                 <div className={style.asksBar}>
                                     {simulacro.map((item, index) =>
                                         <div key={index} className={`${simulacro[index].userAnswer !== undefined && simulacro[index].userAnswer == simulacro[index].respuesta ? style.green : ''} ${simulacro[index].userAnswer !== undefined && simulacro[index].userAnswer !== simulacro[index].respuesta ? style.red : ''} ${simulacro[index].userAnswer == undefined ? style.gray : ''} ${router.query.Answers == index + 1 ? style.focus : ''}`} onClick={() => nav(index)}></div>
-                                    )}
+                                    )}     
                                 </div>
                                 <div className={style.counters}>
                                     <span className={style.asksCount}>Item: {router.query.Answers}/{simulacro.length}</span>
